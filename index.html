@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
  <head>
+  <title> version0.1 </title>
   <script>
    function OpenInNewTab(url) {
     var win = window.open(url, '_blank');
     win.focus();
   }
   </script>
+  <script>
+        function nwindow(){
+            var url="test.html";
+            window.open(url,"","width=400,height=400,left=600");
+        }
+    </script>
  </head>
  
  <body onload=OpenInNewtab('https://sites.google.com/view/smartfactorylab/')>
-  <h1>[1]</h1>
   <h1>We moved to google site</h1>
   <a href="https://sites.google.com/view/smartfactorylab/">https://sites.google.com/view/smartfactorylab/</a>
+  <input type="button" value="새창열기"  onclick="nwindow()"/>
  </body>
 </html>
