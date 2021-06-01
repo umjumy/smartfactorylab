@@ -1,30 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script>
- function OpenInNewTab(url) {
-  var win = window.open(url, '_blank');
-  win.focus();
-}
+ <head>
+  <script>
+   function OpenInNewTab(url) {
+    var win = window.open(url, '_blank');
+    win.focus();
+  }
+  </script>
+ </head>
  
-jQuery(document).ready(function () {
-newTab();
-});
-
-function newTab() {
- var form = document.createElement("form");
- form.method = "GET";
- form.action = "https://sites.google.com/view/smartfactorylab/";
- form.target = "_blank";
- document.body.appendChild(form);
- form.submit();
-}
-</script>
-</head>
-  <a class="my-link">link3</a>
-<body onload=OpenInNewtab('https://sites.google.com/view/smartfactorylab/')>
-<h1>We moved to google site</h1>
-<a href="https://sites.google.com/view/smartfactorylab/">https://sites.google.com/view/smartfactorylab/</a>
-</body>
+ <body onload=OpenInNewtab('https://sites.google.com/view/smartfactorylab/')>
+  <h1>[1]</h1>
+  <h1>We moved to google site</h1>
+  <a href="https://sites.google.com/view/smartfactorylab/">https://sites.google.com/view/smartfactorylab/</a>
+ </body>
 </html>
