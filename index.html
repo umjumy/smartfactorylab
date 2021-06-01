@@ -3,6 +3,11 @@
 <head>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
+ function OpenInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+ 
 jQuery(document).ready(function () {
 newTab();
 });
@@ -17,7 +22,7 @@ function newTab() {
 }
 </script>
 </head>
-  <a class="my-link">link2</a>
+  <a class="my-link">link3</a>
 <body onload=OpenInNewtab('https://sites.google.com/view/smartfactorylab/')>
 <h1>We moved to google site</h1>
 <a href="https://sites.google.com/view/smartfactorylab/">https://sites.google.com/view/smartfactorylab/</a>
